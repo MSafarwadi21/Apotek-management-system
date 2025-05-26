@@ -9,7 +9,7 @@ Fitur:
 - Laporan Stok
 - Dan lainnya...
 
-Akses demo di: [LINK_DEPLOY_ANDA]
+Akses demo di: [https://msafarwadi21.github.io/Apotek-management-system/]
 
 Repo GitHub: https://github.com/username-anda/apotek-management
 
