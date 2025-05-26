@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Manajemen Apotek</title>
+    <link rel="stylesheet" href="../assets/CSS/Boostrap/bootstrap.min.css" />
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/CSS/Custom/Form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Halaman Login -->
+    <div
+      class="container-fluid full-bg d-flex justify-content-start align-items-center"
+    >
+      <div class="row gx-10">
+        <div class="col-md-7">
+          <!-- form login -->
+          <form
+            class="bg p-4 rounded shadow"
+            style="max-width: 300px; height: 400px; margin-left: 200px"
+            method="get"
+            action="../pages/Dashboard.html"
+          >
+            <!-- header form -->
+            <div class="Header">
+              <div class="text-center">
+                <h5>
+                  Sistem Informasi <br />
+                  Manajemen Apotek
+                </h5>
+                <img
+                  src="../assets/img/logo_pojok.jpg"
+                  alt="logo"
+                  style="max-width: 50px"
+                />
+              </div>
+            </div>
+            <!-- akhir header -->
+
+            <!-- email -->
+            <div class="emailHelp">
+              <label for="InputEmail1" class="form-label"></label>
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="InputEmail"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <!-- akhir email -->
+
+            <!-- password -->
+            <div class="passwordHelp">
+              <label for="InputPassword1" class="form-label"></label>
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="Password"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center mt-3"
+              id="buttonId"
+            >
+              <a href="">Lupa Kata Sandi?</a>
+              <button type="submit" class="btn btn-warning custom-hover">
+                Login
+              </button>
+            </div>
+            <!-- akhir password -->
+          </form>
+        </div>
+        <!-- sebelah kanan -->
+        <div class="col-md-5">
+          <div>
+            <h2>
+              Halo! Senang melihat Anda kembali, <br />Masuk ke akun Anda untuk
+              mulai melayani pelanggan dengan lebih baik.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

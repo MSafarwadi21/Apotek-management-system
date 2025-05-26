@@ -1,0 +1,70 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  border-bottom: 1px solid #0f0f10;
+}
+
+/* Sidebar styling */
+.sidebar {
+  height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #0f0f10;
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+  color: #495057;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #41b2e3;
+  color: black;
+}
+
+.sidebar .nav-link.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Main content area */
+.main-content {
+  padding: 20px;
+  min-height: calc(100vh - 56px);
+  background-color: #f8fafc;
+}
+
+.container-fluid img {
+  border-radius: 20px;
+}
+
+/* modal content */
+.modal-content {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+/* Animasi lebih halus */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}

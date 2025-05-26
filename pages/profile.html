@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome untuk ikon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/CSS/Custom/Dasboard.css" />
+  </head>
+  <body>
+    <!-- Navbar Atas -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid row">
+        <!-- Logo dan Brand -->
+        <img
+          src="/assets/img/logo_pojok.jpg"
+          alt="Logo"
+          class="me-2 ms-2"
+          style="width: 80px"
+        />
+        <h3 class="col-md-8 text-white">Sistem Informasi Manajemen Apotek</h3>
+      </div>
+    </nav>
+
+    <!-- Container Utama -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-2 sidebar collapse d-lg-block" id="sidebar">
+          <div class="pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="fa-solid fa-user-tie"></i> <span>Profile</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Dashboard.html">
+                  <i class="fas fa-home"></i> Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="obat.html">
+                  <i class="fa-solid fa-capsules"></i> Obat
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Laporan.html">
+                  <i class="fa-solid fa-note-sticky"></i> Catatan Laporan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Supplier.html">
+                  <i class="fas fa-users"></i> Supplier
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                  <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Konten Utama -->
+        <main class="col-lg-10 ms-sm-auto main-content">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h2 class="h4">
+              <i class="fas fa-user-circle me-2"></i>Profil Saya
+            </h2>
+            <button
+              class="btn btn-sm btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#editProfileModal"
+            >
+              <i class="fas fa-edit me-1"></i> Edit
+            </button>
+          </div>
+
+          <div class="row">
+            <!-- Card Utama -->
+            <div class="col-md-6">
+              <div class="card shadow-sm mb-4">
+                <div class="card-header bg-light">
+                  <h5 class="card-title mb-0">
+                    <i class="fas fa-id-card me-2"></i>Informasi Profil
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div>
+                      <h5 class="mb-1">Maulana Safarwadi</h5>
+                      <p class="text-muted mb-0">Apoteker Utama</p>
+                    </div>
+                  </div>
+
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-envelope me-2 text-muted"></i>
+                          Email</span
+                        >
+                        <span>Safarwadi@apotek.com</span>
+                      </div>
+                    </div>
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-phone me-2 text-muted"></i>
+                          Telepon</span
+                        >
+                        <span>08123456789</span>
+                      </div>
+                    </div>
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-map-marker-alt me-2 text-muted"></i>
+                          Alamat</span
+                        >
+                        <span class="text-end"
+                          >Jl. Kesehatan No. 123, Jakarta</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Informasi Tambahan -->
+            <div class="col-md-6">
+              <div class="card shadow-sm mb-4">
+                <div class="card-header bg-light">
+                  <h5 class="card-title mb-0">
+                    <i class="fas fa-briefcase me-2"></i>Informasi Pekerjaan
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <div class="list-group list-group-flush">
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-building me-2 text-muted"></i>
+                          Apotek</span
+                        >
+                        <span>Apotek Sehat Sentosa</span>
+                      </div>
+                    </div>
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-user-tie me-2 text-muted"></i>
+                          Jabatan</span
+                        >
+                        <span>Apoteker Penanggung Jawab</span>
+                      </div>
+                    </div>
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-id-badge me-2 text-muted"></i>
+                          SIP</span
+                        >
+                        <span>SIP.12345/Apt/2023</span>
+                      </div>
+                    </div>
+                    <div class="list-group-item py-2">
+                      <div class="d-flex justify-content-between">
+                        <span
+                          ><i class="fas fa-calendar-alt me-2 text-muted"></i>
+                          Mulai Bekerja</span
+                        >
+                        <span>1 Januari 2020</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal Edit Profil -->
+    <div
+      class="modal fade"
+      id="editProfileModal"
+      tabindex="-1"
+      aria-labelledby="editProfileModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editProfileModalLabel">
+              <i class="fas fa-user-edit me-2"></i>Edit Profil
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" value="Admin Apotek" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  value="admin@apotek.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Telepon</label>
+                <input type="tel" class="form-control" value="08123456789" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Alamat</label>
+                <textarea class="form-control" rows="2">
+Jl. Kesehatan No. 123, Jakarta</textarea
+                >
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Foto Profil</label>
+                <input type="file" class="form-control" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn btn-primary">Simpan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
