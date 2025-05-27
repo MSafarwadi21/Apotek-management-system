@@ -10,7 +10,7 @@ body {
 
 /* Background gambar full */
 .container-fluid {
-  background-image: url("assets/img/ANALISIAPOTEK.jpg");
+  background-image: url("/img/ANALISIAPOTEK.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
