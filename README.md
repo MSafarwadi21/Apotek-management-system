@@ -11,6 +11,6 @@ Fitur:
 
 Akses demo di: [https://msafarwadi21.github.io/Apotek-management-system/]
 
-Repo GitHub: https://github.com/username-anda/apotek-management
+Repo GitHub: [https://github.com/MSafarwadi21/Apotek-management-system]
 
 Feedback sangat diharapkan! ✨
