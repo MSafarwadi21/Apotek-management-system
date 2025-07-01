@@ -130,6 +130,57 @@
       </div>
     </div>
 
+    <!-- Modal Popup Tutorial -->
+    <div class="modal fade" id="tutorialModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tutorial Hosting dengan GitHub</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Berikut langkah-langkah hosting menggunakan GitHub Pages:</p>
+            <ol>
+              <li>Buat repository baru di GitHub.</li>
+              <li>Upload semua file proyek Anda ke repository tersebut.</li>
+              <li>Pergi ke Settings > Pages.</li>
+              <li>Pilih branch main dan folder /root.</li>
+              <li>Klik Save, lalu tunggu beberapa menit.</li>
+              <li>
+                Situs Anda akan live di https://username.github.io/repository.
+              </li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Tampilkan modal saat halaman dimuat (untuk dashboard)
+      if (window.location.pathname.includes("Dashboard.html")) {
+        document.addEventListener("DOMContentLoaded", function () {
+          var myModal = new bootstrap.Modal(
+            document.getElementById("tutorialModal")
+          );
+          myModal.show();
+        });
+      }
+    </script>
+
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
